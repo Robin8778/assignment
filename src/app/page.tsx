@@ -1,11 +1,9 @@
 "use client"
 import React from 'react';
 import { useEffect } from 'react';
-import {
-  Tab,
-  initTE,
-} from "tw-elements";
-initTE({ Tab });
+import 'tw-elements';
+
+
 
 export default function Home() {
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -16,6 +14,10 @@ export default function Home() {
   };
 
   useEffect(() => {
+    import('tw-elements').then(({ initTE, Tab }) => {
+      // Initialize the tab component from tw-elements when the component mounts
+      initTE({ Tab });
+    });
     const handleScroll = () => {
 
       const scrollY = window.scrollY;
@@ -137,7 +139,7 @@ export default function Home() {
               <li role="presentation">
                 <a
                   href="#tabs-home"
-                  className="p-1 block border-x-0 px-4 py-2 border-b-2 border-t-0 border-transparent text-[#b0b4be]  text-lg font-bold uppercase leading-tight hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary data-[te-nav-active]:underline data-[te-nav-active]:text-[#414f6b] 
+                  className="p-1 block border-x-0 px-4 py-2 border-b-2 border-t-0 border-transparent text-[#b0b4be]  text-lg font-bold uppercase leading-tight hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:underline data-[te-nav-active]:text-[#414f6b] 
                   data-[te-nav-active]:bg-[#b0b4be]"
                   data-te-toggle="pill"
                   data-te-target="#tabs-home"
@@ -150,7 +152,7 @@ export default function Home() {
               <li role="presentation">
                 <a
                   href="#tabs-profile"
-                  className="p-1 block border-x-0 py-2 px-4 border-b-2 border-t-0 border-transparent text-[#b0b4be]  text-lg font-bold uppercase leading-tight hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary data-[te-nav-active]:underline data-[te-nav-active]:text-[#414f6b] 
+                  className="p-1 block border-x-0 py-2 px-4 border-b-2 border-t-0 border-transparent text-[#b0b4be]  text-lg font-bold uppercase leading-tight hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:underline data-[te-nav-active]:text-[#414f6b] 
                   data-[te-nav-active]:bg-[#b0b4be]"
                   data-te-toggle="pill"
                   data-te-target="#tabs-profile"
@@ -282,7 +284,6 @@ export default function Home() {
          
         </div>
       </div>
-
 
     </>
   )
