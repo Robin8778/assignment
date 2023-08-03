@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import { useEffect } from 'react';
-import 'tw-elements';
 
 
 
@@ -14,10 +13,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    import('tw-elements').then(({ initTE, Tab }) => {
-      // Initialize the tab component from tw-elements when the component mounts
-      initTE({ Tab });
-    });
     const handleScroll = () => {
 
       const scrollY = window.scrollY;
@@ -131,7 +126,7 @@ export default function Home() {
 
 
           </div>
-          <ul
+         <ul
             className=" flex list-none flex-row flex-wrap border-b-0 pl-0 back-custom"
             role="tablist"
             data-te-nav-ref>
@@ -258,7 +253,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
+ 
 
           </div>
         </div>
