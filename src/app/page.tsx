@@ -167,7 +167,7 @@ export default function Home() {
               role="tabpanel"
               aria-labelledby="tabs-home-tab"
               data-te-tab-active>
-              <div className=" bg-cover bg-no-repeat h-screen w-screen flex" style={{ backgroundImage: "url('/climb.png')" }}>
+              <div className=" bg-cover bg-no-repeat h-screen w-screen flex" style={{ backgroundImage: "url('/Climb.png')" }}>
                 <div className="max-w-screen-xl mx-auto  w-screen xl:w-xl flex">
                   <div className="bg-white bg-opacity-70 flex flex-col h-max mt-20 md:mt-40 w-[350px] md:w-[500px] pl-10 pr-10 pb-10 md:ml-20 ">
                     <div className="text-[50px] font-bold text-custom-color1 pt-2">SCHEDULE</div>
@@ -213,7 +213,7 @@ export default function Home() {
               id="tabs-profile"
               role="tabpanel"
               aria-labelledby="tabs-profile-tab">
-              <div className=" bg-cover bg-no-repeat h-screen w-screen  flex" style={{ backgroundImage: "url('/climb.png')" }}>
+              <div className=" bg-cover bg-no-repeat h-screen w-screen  flex" style={{ backgroundImage: "url('/Climb.png')" }}>
                 <div className="max-w-screen-xl mx-auto  w-screen xl:w-xl flex">
                   <div className="bg-white bg-opacity-70 flex flex-col h-max mt-20 md:mt-40 w-[350px] md:w-[500px] pl-10 pr-10 pb-10 md:ml-20 ">
                     <div className="text-[50px] font-bold text-custom-color1 pt-2">SCHEDULE</div>
